@@ -1,0 +1,27 @@
+State : Un état.
+Permet de sauvegarder des données dans le composant, qui sont directement synchronisés avec le DOM virtuel écrit en jsx. Dès que les données sont modifiées, l'interface de l'application est automatiquement mise à jour pour les utilisateurs.
+
+Que fait useState?
+Les hooks sont de simples fonctions Js, ce hook permet de déclarer une variable d'état. Cette méthode prend en argument une valeur correspondant à un état initial du composant. Cela peut être n'importe quelle valeur (ici React).
+
+Cette fonction retourne une paire de deux éléments:
+-L'état actuel (name)
+-Une fonction pour modifier la valeur de cet état (setName)
+
+3 étapes du cycle de vie d'un composant:
+-Création
+-Modification du DOM
+-Suppression d'un composant
+
+componentDidMount() : 
+Méthode appelée en premier lors de la création d'un composant, lorsqu'il est inséré dans le DOM. Cela nous permet de mettre en place certaines instructions lors de l'initialisation du composant, comme la récupération de données depuis un serveur distant par exemple. On parle de "montage" du composant en terme React.
+
+componentDidUpdate(prevProps, prevState) : 
+A chaque fois que React détecte que les valeurs d'une propriété sont modifiées, le composant est mis à jour. La méthode reçoit en paramètre deux objets représentant les props et le state avant la mise à jour. Cela vous donne l'opportunité de travailler sur le DOM une fois que le composant a été mis à jour.
+
+componentWillUnmount() : Appelé juste avant que le composant soit détruit par React. Un composant est retiré du DOM, lors de la navigation de l'utilisateur par exemple. Cette méthode permet de se désabonner de certaines dépendances du composant, et ainsi éviter les problèmes de performance dans notre application. On peut détacher les gestionnaires dévènements, ou encore interrompre un minuteru. En terme React, cette étape est appelée le "démontage".
+
+Règles des hooks
+1-Appeler les Hooks uniquement au niveau de la racine, ne pas les appeler à l'intérieur d'une boucle ou d'une condition.
+2-Appeler les hooks depuis des composants de fonctions.
+3-Modifier un état par remplacement
