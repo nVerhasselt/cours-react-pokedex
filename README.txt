@@ -2,7 +2,7 @@ This is a simple React application I have made to practice React before the inte
 
 I found a 7 hours youtube tutorial by Simon Dieny https://www.youtube.com/watch?v=oCINeytlyRA&t=10691s&ab_channel=SimonDieny-CodeSenior
 
-I followed the tutorial and got familiar with React, TypeScript and Tailwind. 
+I followed the tutorial and got familiar with React, TypeScript and Materialize. 
 
 
 It is important to notice that it's quite old and we don't use exactly the same syntaxe anymore. I also watched this tutorial : https://www.youtube.com/watch?v=h2a0cSC1Vz8&t=2232s&ab_channel=ViDev  
