@@ -17,5 +17,5 @@ I also used the official React documentation to develop the React / Spring Boot 
 To start the API pokédex, run the command on terminal: npm run start:api
 
 Then run the command: npm start
-in another terminal
+in another terminal: npm run start:api
 

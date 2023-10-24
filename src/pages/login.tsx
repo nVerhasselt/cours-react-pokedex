@@ -84,16 +84,19 @@ const Login: FunctionComponent = () => {
           <div className="card hoverable">
             <div className="card-stacked">
               <div className="card-content">
+
                 {/* Form message */}
                 {message && <div className="form-group">
                   <div className="card-panel grey lighten-5">
                     {message}
                   </div>
                 </div>}
+
                 {/* Field username */}
                 <div className="form-group">
                   <label htmlFor="username">Identifiant</label>
                   <input id="username" type="text" name="username" className="form-control" value={form.username.value} onChange={e => handleInputChange(e)}></input>
+                  
                   {/* error */}
                   {form.username.error &&
                   <div className="card-panel red accent-1"> 
